@@ -1,0 +1,534 @@
+REPLY:220 my2.org ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as LGQH9BJN
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 my2.org ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as G7DVKCMZT
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 my2.org ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as K8BJ4H7
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 my2.org ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as 2VWTLCDM
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 my2.org ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as W2BTN43F
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 my2.org ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as LT87HMWXR
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 my2.org ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as MDXF294H
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 my2.org ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as JF9Y6BLW
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 my2.org ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as JK3FX2HL
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 my2.org ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as 4DXCTW2HB
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 my2.org ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:220 my2.org ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:220 my2.org ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as cc17b204235a1b29d546
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 my2.org ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as 24723d5ff907e118361a
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 my2.org ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as de76cae3ad
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 my2.org ESMTP Postfix, posting to
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as f08b2b7213
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 my2.org ESMTP Postfix, posting to
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as d168b56089
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as f234a85b20
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as c8280f0e6f
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as 67a5cd5c8f
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as 13bec63807
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as 4b5190d291
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as b6d5157551
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as 5ca5da80ba
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as 30691fc9c7
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as 750c5c8713
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as b2263b517b
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as 015e7d2962
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as f5754fdb88
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as 7a6aa706f8
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as 26e78350e5
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as 16c5842c74
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as 5d30472824
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as 8bf7087e97
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as e896ac0f87
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as 42c5ef2dbe
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as 680d015ea8
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as 3ca08e66fc
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as 0af6710a63
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as 19b63039c3
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as c36ce38d80
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as 9fef4ab4df
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as 51cae020ba
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as 2defad9465
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1
+REPLY:220 ESMTP Postfix
+EHLO [127.0.0.1]
+REPLY:250 HELO 172.20.0.1
+MAIL FROM:<me@phil-taylor.com>
+REPLY:250 2.1.0 Ok
+RCPT TO:<phil@phil-taylor.com>
+REPLY:250 2.1.5 Ok
+DATA
+REPLY:354 Ok Send data ending with <CRLF>.<CRLF>
+REPLY:250 2.0.0 Ok: queued as 7d2012ac11
+QUIT
+REPLY:221 2.0.0 Bye 172.20.0.1

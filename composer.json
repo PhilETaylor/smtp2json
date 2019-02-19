@@ -8,6 +8,8 @@
         }
     ],
     "require": {
-        "guzzlehttp/guzzle": "^6.3"
+        "guzzlehttp/guzzle": "^6.3",
+        "swiftmailer/swiftmailer": "^6.1",
+        "symfony/dotenv": "^4.2"
     }
 }

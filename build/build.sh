@@ -1,0 +1,1 @@
+docker build build/ --tag philetaylor/smtp2json:latest

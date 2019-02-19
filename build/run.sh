@@ -1,0 +1,1 @@
+docker run -d --always -p25:25 philetaylor/smtp2json:latest

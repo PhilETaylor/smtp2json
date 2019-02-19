@@ -18,7 +18,7 @@ smtp   stream    tcp    nowait    root    /path/to/fake-server.php
 ```php
 #!/usr/bin/php
 <?php
-require('fakeSMTP.php');
+require('SMTPServer.php;
 
 $hp = new fakeSMTP;
 $hp->serverHello = 'axllent.org ESMTP Postfix'; // Server identity (optional)

@@ -8,4 +8,9 @@ services:
     ports:
       -  "25:25"
     volumes:
-      - ./:/app:cached
+      - ./:/app
+  httpbin:
+    container_name: 'httpbin'
+    image: kennethreitz/httpbin:latest
+    ports:
+      -  "80:80"

@@ -1,25 +1,32 @@
 <?php
 /**
- * fakeSMTP - A PHP / inetd fake smtp server.
+ * SMTPServer - A PHP / inetd fake smtp server.
  * Allows client<->server interaction
  * The comunication is based upon the SMPT standards defined in http://www.lesnikowski.com/mail/Rfc/rfc2821.txt
  */
 
-class fakeSMTP
+class SMTPServer
 {
     public $logFile = false;
-    public $serverHello = 'fakeSMTP ESMTP PHP Mail Server Ready';
+    public $serverHello = 'SMTPServer ESMTP PHP Mail Server Ready';
 
     public function __construct()
     {
         $this->mail = array();
         $this->mail['ipaddress'] = false;
-        $this->mail['emailSender'] = '';
-        $this->mail['emailRecipients'] = array();
-        $this->mail['emailSubject'] = false;
+        $this->mail['sender'] = '';
+        $this->mail['recipients'] = array();
+        $this->mail['subject'] = false;
         $this->mail['rawEmail'] = false;
         $this->mail['emailHeaders'] = false;
-        $this->mail['emailBody'] = false;
+        $this->mail['headers'] = false;
+        $this->mail['TextBody'] = false;
+    }
+
+    public function getJSON(): string
+    {
+        unset ($this->mail['emailHeaders']);
+        return json_encode($this->mail, JSON_PRETTY_PRINT);
     }
 
     public function receive()
@@ -39,7 +46,7 @@ class fakeSMTP
 
             if (!$receivingData && preg_match('/^MAIL FROM:\s?<(.*)>/i', $data, $match)) {
                 if (preg_match('/(.*)@\[.*\]/i', $match[1]) || $match[1] != '' || $this->validateEmail($match[1])) {
-                    $this->mail['emailSender'] = $match[1];
+                    $this->mail['sender'] = $match[1];
                     $this->reply('250 2.1.0 Ok');
                     $hasValidFrom = true;
                 } else {
@@ -50,7 +57,7 @@ class fakeSMTP
                     $this->reply('503 5.5.1 Error: need MAIL command');
                 } else {
                     if (preg_match('/postmaster@\[.*\]/i', $match[1]) || $this->validateEmail($match[1])) {
-                        array_push($this->mail['emailRecipients'], $match[1]);
+                        array_push($this->mail['recipients'], $match[1]);
                         $this->reply('250 2.1.5 Ok');
                         $hasValidTo = true;
                     } else {
@@ -86,18 +93,23 @@ class fakeSMTP
                 $splitmail = explode("\n\n", $this->mail['rawEmail'], 2);
                 if (count($splitmail) == 2) {
                     $this->mail['emailHeaders'] = $splitmail[0];
-                    $this->mail['emailBody'] = $splitmail[1];
+                    $this->mail['TextBody'] = $splitmail[1];
                     $headers = preg_replace("/ \s+/", ' ', preg_replace("/\n\s/", ' ', $this->mail['emailHeaders']));
                     $headerlines = explode("\n", $headers);
                     for ($i = 0; $i < count($headerlines); $i++) {
+
+                        // store individual header in assoc array
+                        $parts = explode(': ', $headerlines[$i]);
+                        $this->mail['headers'][$parts[0]] = $parts[1];
+
                         if (preg_match('/^Subject: (.*)/i', $headerlines[$i], $matches)) {
-                            $this->mail['emailSubject'] = trim($matches[1]);
+                            $this->mail['subject'] = trim($matches[1]);
                         }
                     }
                 } else {
-                    $this->mail['emailBody'] = $splitmail[0];
+                    $this->mail['TextBody'] = $splitmail[0];
                 }
-                set_time_limit(5); // Just run the exit to prevent open threads / abuse
+//                set_time_limit(5); // Just run the exit to prevent open threads / abuse
             } elseif ($receivingData) {
                 $this->mail['rawEmail'] .= $data;
             }
@@ -109,7 +121,6 @@ class fakeSMTP
     public function log($s)
     {
         if ($this->logFile) {
-            fwrite(STDOUT, trim($s) . "\r\n");
             file_put_contents($this->logFile, trim($s) . "\n", FILE_APPEND);
         }
     }
@@ -131,18 +142,15 @@ class fakeSMTP
         return preg_match('/^[_a-z0-9-+]+(\.[_a-z0-9-+]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/', strtolower($email));
     }
 
-    private function generateRandom($length = 8)
+    /**
+     * @param int $length
+     *
+     * @return string
+     *
+     * @throws Exception
+     */
+    private function generateRandom($length=8)
     {
-        $password = '';
-        $possible = '2346789BCDFGHJKLMNPQRTVWXYZ';
-        $maxlength = strlen($possible);
-        $i = 0;
-        for ($i = 0; $i < $length; $i++) {
-            $char = substr($possible, mt_rand(0, $maxlength - 1), 1);
-            if (!strstr($password, $char)) {
-                $password .= $char;
-            }
-        }
-        return $password;
+        return substr(bin2hex(random_bytes($length)), $length);
     }
 }
