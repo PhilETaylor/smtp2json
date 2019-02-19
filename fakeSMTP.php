@@ -28,7 +28,7 @@ class fakeSMTP
         $hasValidTo = false;
         $receivingData = false;
         $header = true;
-        $this->reply('220 '.$this->serverHello);
+        $this->reply('220 ' . $this->serverHello);
         $this->mail['ipaddress'] = $this->detectIP();
         while ($data = fgets(STDIN)) {
             $data = preg_replace('@\r\n@', "\n", $data);
@@ -54,7 +54,7 @@ class fakeSMTP
                         $this->reply('250 2.1.5 Ok');
                         $hasValidTo = true;
                     } else {
-                        $this->reply('501 5.1.3 Bad recipient address syntax '.$match[1]);
+                        $this->reply('501 5.1.3 Bad recipient address syntax ' . $match[1]);
                     }
                 }
             } elseif (!$receivingData && preg_match('/^RSET$/i', trim($data))) {
@@ -64,7 +64,7 @@ class fakeSMTP
             } elseif (!$receivingData && preg_match('/^NOOP$/i', trim($data))) {
                 $this->reply('250 2.0.0 Ok');
             } elseif (!$receivingData && preg_match('/^VRFY (.*)/i', trim($data), $match)) {
-                $this->reply('250 2.0.0 '.$match[1]);
+                $this->reply('250 2.0.0 ' . $match[1]);
             } elseif (!$receivingData && preg_match('/^DATA/i', trim($data))) {
                 if (!$hasValidTo) {
                     $this->reply('503 5.5.1 Error: need RCPT command');
@@ -73,7 +73,7 @@ class fakeSMTP
                     $receivingData = true;
                 }
             } elseif (!$receivingData && preg_match('/^(HELO|EHLO)/i', $data)) {
-                $this->reply('250 HELO '.$this->mail['ipaddress']);
+                $this->reply('250 HELO ' . $this->mail['ipaddress']);
             } elseif (!$receivingData && preg_match('/^QUIT/i', trim($data))) {
                 break;
             } elseif (!$receivingData) {
@@ -82,14 +82,14 @@ class fakeSMTP
             } elseif ($receivingData && $data == ".\n") {
                 /* Email Received, now let's look at it */
                 $receivingData = false;
-                $this->reply('250 2.0.0 Ok: queued as '.$this->generateRandom(10));
+                $this->reply('250 2.0.0 Ok: queued as ' . $this->generateRandom(10));
                 $splitmail = explode("\n\n", $this->mail['rawEmail'], 2);
                 if (count($splitmail) == 2) {
                     $this->mail['emailHeaders'] = $splitmail[0];
                     $this->mail['emailBody'] = $splitmail[1];
                     $headers = preg_replace("/ \s+/", ' ', preg_replace("/\n\s/", ' ', $this->mail['emailHeaders']));
                     $headerlines = explode("\n", $headers);
-                    for ($i=0; $i<count($headerlines); $i++) {
+                    for ($i = 0; $i < count($headerlines); $i++) {
                         if (preg_match('/^Subject: (.*)/i', $headerlines[$i], $matches)) {
                             $this->mail['emailSubject'] = trim($matches[1]);
                         }
@@ -103,14 +103,14 @@ class fakeSMTP
             }
         }
         /* Say good bye */
-        $this->reply('221 2.0.0 Bye '.$this->mail['ipaddress']);
+        $this->reply('221 2.0.0 Bye ' . $this->mail['ipaddress']);
     }
 
     public function log($s)
     {
         if ($this->logFile) {
             fwrite(STDOUT, trim($s) . "\r\n");
-            file_put_contents($this->logFile, trim($s)."\n", FILE_APPEND);
+            file_put_contents($this->logFile, trim($s) . "\n", FILE_APPEND);
         }
     }
 
@@ -131,14 +131,14 @@ class fakeSMTP
         return preg_match('/^[_a-z0-9-+]+(\.[_a-z0-9-+]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/', strtolower($email));
     }
 
-    private function generateRandom($length=8)
+    private function generateRandom($length = 8)
     {
         $password = '';
         $possible = '2346789BCDFGHJKLMNPQRTVWXYZ';
         $maxlength = strlen($possible);
         $i = 0;
-        for ($i=0; $i < $length; $i++) {
-            $char = substr($possible, mt_rand(0, $maxlength-1), 1);
+        for ($i = 0; $i < $length; $i++) {
+            $char = substr($possible, mt_rand(0, $maxlength - 1), 1);
             if (!strstr($password, $char)) {
                 $password .= $char;
             }

@@ -1,0 +1,11 @@
+version: '3'
+services:
+  smtp2json:
+    container_name: 'smtp2json'
+    build:
+      context: ./build/
+      dockerfile: Dockerfile
+    ports:
+      -  "25:25"
+    volumes:
+      - ./:/app:cached

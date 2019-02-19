@@ -1,0 +1,13 @@
+{
+    "name": "philetaylor/smtp2json",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Phil E. Taylor",
+            "email": "phil@phil-taylor.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    }
+}

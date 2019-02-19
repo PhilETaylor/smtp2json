@@ -13,4 +13,4 @@ if (!$hp->mail['rawEmail']) {
 $email = json_encode($hp->mail);
 
 $STDOUT = fopen('/dev/stdout', 'wb');
-fwrite($STDOUT, $email."\n"); 
+fwrite($STDOUT, $email . "\n");
