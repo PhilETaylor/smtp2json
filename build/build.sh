@@ -1,1 +1,1 @@
-docker build build/ --tag philetaylor/smtp2json:latest
+docker  build build/ --tag philetaylor/smtp2json:latest --no-cache
