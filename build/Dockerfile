@@ -18,6 +18,6 @@ RUN unzip -q -d /tmp /tmp/master.zip
 RUN mv /tmp/smtp2json-master /app
 RUN cp /app/build/inetd.conf /etc/inetd.conf
 RUN cd /app && composer install
-RUN chmod +x /app/fake-server.php
+RUN chmod +x /app/app.php
 
 CMD /usr/sbin/inetd && tail -f /dev/null

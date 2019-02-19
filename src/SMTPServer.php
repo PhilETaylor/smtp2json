@@ -121,6 +121,9 @@ class SMTPServer
     public function log($s)
     {
         if ($this->logFile) {
+            if (!file_exists($this->logFile)){
+                file_put_contents($this->logFile,'#');
+            }
             file_put_contents($this->logFile, trim($s) . "\n", FILE_APPEND);
         }
     }

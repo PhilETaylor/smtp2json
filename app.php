@@ -1,4 +1,3 @@
-#!/usr/bin/php
 <?php
 
 use GuzzleHttp\Client;
@@ -17,7 +16,7 @@ $client = new Client();
 $proxyOptions = [];
 
 if ($env === 'dev') {
-    $hp->logFile = '/app/log.txt'; // Log the transaction files (optional)
+    $hp->logFile = '/app/log/log.txt'; // Log the transaction files (optional)
     $proxyOptions = [
         'proxy' => 'tcp://host.docker.internal:8888',
         'verify' => false
